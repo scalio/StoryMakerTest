@@ -1,7 +1,7 @@
 StoryMakerTest
 ==============
 
-A test project for StoryMaker.cc that utilizes Espresso
+A test project for [StoryMaker](http://storymaker.cc/) that utilizes Espresso
 
 ###Credits
 
