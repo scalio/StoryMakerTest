@@ -1,4 +1,4 @@
-package info.guardianproject.mrapp.test.viewactions;
+package info.guardianproject.mrapp.test.actions;
 
 import org.hamcrest.Matcher;
 
