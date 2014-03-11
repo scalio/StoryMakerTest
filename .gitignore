@@ -20,5 +20,8 @@ local.properties
 .classpath
 .project
 
+# Spoon Output
+spoon-output/
+
 # Mac OS junk
 .DS_Store

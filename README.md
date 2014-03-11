@@ -28,7 +28,18 @@ StoryMakerTest was developed by [Scal.io](http://scal.io) and [Small World News]
        + Make sure "Instrumentation Runner" is set to "com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
 
 
+#### Using [Spoon](https://github.com/square/spoon)
 
+Spoon automatically runs tests against all devices available to adb and generates pretty HTML reports in `./spoon-output/`. 
+
+To invoke spoon:
+
+    java -jar ./spoon/spoon-runner-1.1.1-jar-with-dependencies.jar \ 
+    --class-name info.guardianproject.mrapp.test.TestCreateStory \  # fully qualified test class name. Ignore to run all tests
+    --apk ./path/to/StoryMaker.apk \
+    --test-apk ./bin/StoryMakerTest.apk
+
+**Note:** `IPTest` in the BouncyCastle library is detected by Spoon if you don't specify a test `--class-name`, and Spoon is unable to run that test.
 
 ### Authors
 
